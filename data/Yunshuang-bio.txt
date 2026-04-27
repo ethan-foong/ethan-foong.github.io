@@ -1,0 +1,8 @@
+Yunshuang is a Robotics Master's student at the University of Pennsylvania, 
+advised by Professor Dinesh Jayaraman. Her research focuses on vision-based 
+robot learning, aiming to derive optimal representations for downstream 
+robotics control tasks. She holds a BS degree in Automatic Control and dual 
+degrees in Mechanical Engineering from Zhejiang University in 2022, with honors
+from the esteemed Chu Kochen Honors College. Yunshuang was awarded the Chiang 
+Chen Overseas Graduate Scholarship to support her master's studies 
+in the US.
