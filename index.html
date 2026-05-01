@@ -22,9 +22,15 @@
   </head>
 
   <style>
-      .black-link {
-      color: black; /* Set the desired color for the link */
-    }
+      .black-link { color: black; }
+      .myself { color: black; text-decoration: underline; }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+
+      }
       .myself {
         color: black;
         text-decoration: underline;
@@ -40,12 +46,74 @@
             font-family: "Times New Roman", Times, serif; /* Different font for the centered text */
         }
   </style>
+  <style>
+        /* ── Nav bar ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #2a347e;
+    }
+
+    .site-nav-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-nav .wordmark {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #2a347e;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .site-nav .nav-links { display: flex; }
+
+    .site-nav .nav-links a {
+      font-size: 13px;
+      color: #444;
+      text-decoration: none;
+      padding: 0 14px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+      font-family: Arial, sans-serif;
+    }
+
+    .site-nav .nav-links a:hover,
+    .site-nav .nav-links a.active {
+      color: #2a347e;
+      border-bottom-color: #2a347e;
+    }
+  </style>
   <body>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP3V8B7B"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+     
+    <nav class="site-nav">
+      <div class="site-nav-inner">
+        <a href="index.html" class="wordmark">Ethan Foong</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="projects/index.html">Projects</a>
+          <a href="blog/index.html">Blog</a>
+        </div>
+      </div>
+    </nav>
+
 
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -92,8 +160,7 @@
                   <a href="mailto:EthanFoong2027@u.northwestern.edu">Email</a> &nbsp;/&nbsp;
                   <a href="images/Ethan_Foong_CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/ethan-foong/">LinkedIn</a> <!--&nbsp;/&nbsp;-->
-                  <!-- <a href="https://twitter.com/YunshuangL">Twitter</a> -->
+                  <a href="https://www.linkedin.com/in/ethan-foong/">LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">

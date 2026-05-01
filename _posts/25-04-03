@@ -1,0 +1,35 @@
+---
+layout: post
+title: "What does it mean for a robot to play?"
+date: 2025-04-30
+description: "Thinking through what unstructured exploration actually looks like for a dexterous robot, and why it's harder than it sounds."
+tags: [robotics, research]
+---
+
+One of the questions I keep coming back to in my research is deceptively simple: what does it actually mean for a robot to *play*?
+
+In humans, play is easy to recognize but hard to define. A child stacking blocks isn't optimizing for anything in particular — they're exploring what's possible, building intuition about physics, occasionally knocking things over just to see what happens. There's no reward signal. There's no task.
+
+## Why this matters for manipulation
+
+Most robot learning today is deeply task-centric. You define a reward, collect demonstrations, or specify a goal state. The robot learns to hit that target. It works surprisingly well — but it also means the robot is only ever as capable as the tasks you thought to train it on.
+
+The alternative vision is a robot that accumulates a broad repertoire of skills through open-ended interaction, then *composes* those skills when a specific task comes along. Less like a specialist, more like a curious generalist.
+
+The challenge is that "open-ended interaction" is doing a lot of work in that sentence. Without some structure, random exploration in a high-dimensional action space is just noise.
+
+## What makes exploration useful?
+
+A few properties seem important:
+
+- **Novelty**: the robot should prefer states it hasn't visited before, which drives coverage of the state space.
+- **Learnability**: not all novel states are equally useful. A state that's hard to reach reproducibly doesn't give you much to build on.
+- **Composability**: ideally, the skills discovered can be combined. A grasp learned during play should be usable downstream.
+
+The tricky part is that these objectives can conflict. Maximally novel states are often hard to reach reliably. Highly composable skills might cluster around a narrow region of the state space.
+
+## Where I think this is going
+
+My intuition is that the answer involves something like *curriculum over intrinsic motivation* — starting with simple novelty-seeking behavior, then gradually shifting toward more structured exploration as the robot builds up a model of what it can reliably do.
+
+Whether that's the right framing, I'm not sure yet. But it's the question I keep coming back to.

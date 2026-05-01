@@ -1,0 +1,66 @@
+<!-- ---
+layout: base
+title: Blog
+--- -->
+
+<style>
+  .post-entry {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 24px;
+  }
+  .post-date {
+    flex-shrink: 0;
+    width: 110px;
+    font-size: 13px;
+    color: #888;
+    padding-top: 2px;
+  }
+  .post-title a {
+    font-size: 15px;
+    color: #1772d0;
+    text-decoration: none;
+  }
+  .post-title a:hover { text-decoration: underline; }
+  .post-blurb {
+    font-size: 13px;
+    color: #555;
+    margin: 3px 0 0;
+  }
+</style>
+
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+      <h2 style="font-size:24px;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;font-weight:300;">Blog</h2>
+      <p>Notes on research, reading, and things I find interesting.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0 20px 20px;">
+
+      {% for post in site.posts %}
+      <div class="post-entry">
+        <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <div>
+          <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          {% if post.description %}
+          <div class="post-blurb">{{ post.description }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+
+    </td>
+  </tr>
+</tbody></table>
+
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr><td style="padding:0px">
+    <br>
+    <p style="text-align:right;font-size:small;">
+      Inspired by the template <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+    </p>
+  </td></tr>
+</tbody></table>

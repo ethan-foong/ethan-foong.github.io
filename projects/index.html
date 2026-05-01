@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Projects – Ethan Foong</title>
+    <meta name="author" content="Ethan Foong">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  </head>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #2a347e;
+    }
+    .site-nav-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-nav .wordmark {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #2a347e;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .site-nav .nav-links { display: flex; }
+    .site-nav .nav-links a {
+      font-size: 13px;
+      color: #444;
+      text-decoration: none;
+      padding: 0 14px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+      font-family: Arial, sans-serif;
+    }
+    .site-nav .nav-links a:hover,
+    .site-nav .nav-links a.active {
+      color: #2a347e;
+      border-bottom-color: #2a347e;
+    }
+  </style>
+
+  <body>
+    <nav class="site-nav">
+      <div class="site-nav-inner">
+        <a href="../index.html" class="wordmark">Ethan Foong</a>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="index.html" class="active">Projects</a>
+          <a href="../blog/index.html">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <h2 style="font-size:24px;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;font-weight:300;">Projects</h2>
+          <p>Some other things I've worked on outside of research.</p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <!-- PROJECT ENTRY — duplicate this <tr> for each project -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="../images/project-thumb.png" width="160">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="my-project/index.html">
+            <span class="papertitle">Project Title</span>
+          </a>
+          <br>
+          <em>Short tagline or date</em>
+          <br>
+          <a href="">GitHub</a> &nbsp;/&nbsp; <a href="">demo</a>
+          <p>A couple sentences on what this is and what you built or learned.</p>
+        </td>
+      </tr>
+      <!-- end project entry -->
+
+    </tbody></table>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td style="padding:0px">
+        <br>
+        <p style="text-align:right;font-size:small;">
+          Inspired by the template <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+        </p>
+      </td></tr>
+    </tbody></table>
+  </body>
+</html>
